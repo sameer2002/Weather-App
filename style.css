@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #360369;
+    font-family: 'Inter', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 270px;
+}
+.main h1{
+    color: white;
+    font-size: 8vw;
+}
+.main>button{
+    padding: 10px;
+    width: 34%;
+}
+.container{
+    width: 100%;
+    background: #360369;
+}
+.first{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #360369;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    color: white;
+
+}
+.first>h1{
+    margin-top: 20px;
+    color: white;
+    font-size: 4vw;
+}
+.location{
+    display: grid;
+    gap: 1em;
+}
+.first>p{
+  font-weight: 100;
+  font-size: 2vw;
+}
+.lat-long{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.lat-long>div{
+    background-color: #270846;
+    border-radius: 10px;
+    padding: 20px 36px;
+}
+.second{
+    background-color: white;
+    width: 95%;
+    gap: 1em;
+    display: grid;
+    margin: auto;
+}
+.second-o{
+    width: 100%;
+    background-color: white;
+}
+.second>h1{
+    margin-top: 20px;
+    font-size: 3vw;
+    color: #360369;
+}
+.details{
+    display: inline-flex;
+    /* grid-template-columns: repeat(3,1fr); */
+    gap: 1.5em;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.details>div{
+    background-color: #360369;
+    border-radius: 10px;
+    padding: 20px 86px;
+    color: white;
+    font-size: 1.5vw;
+}
+@media only screen and (max-width: 600px) {
+    .lat-long>div {
+        border-radius: 5px;
+        font-size: 10px;
+        padding: 17px 18px;
+    }
+    .location>iframe{
+        height: 600px;
+    }
+    .details>div{
+        background-color: #360369;
+        border-radius: 10px;
+        padding: 20px 54px;
+        color: white;
+        font-size: 10px;
+    }
+}
